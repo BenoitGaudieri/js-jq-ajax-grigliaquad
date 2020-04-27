@@ -141,4 +141,6 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: color-rotate 3s infinite alternate;
+    max-width: 800px;
+    line-height: 50px;
 }
