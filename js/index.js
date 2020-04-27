@@ -1,6 +1,3 @@
-/**
- * Ajax first steps
-//  */
 $(document).ready(function () {
     var apiUrl = "https://flynn.boolean.careers/exercises/api/random/int";
     for (let i = 0; i < 36; i++) {
