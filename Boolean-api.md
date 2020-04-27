@@ -1,0 +1,8 @@
+-   https://flynn.boolean.careers/exercises/api/random/int (ritorna un numero da 1 a 9)
+-   https://flynn.boolean.careers/exercises/api/random/word (ritorna una parola)
+-   https://flynn.boolean.careers/exercises/api/random/name (ritorna un nome)
+-   https://flynn.boolean.careers/exercises/api/random/mail (ritorna una email)
+-   https://flynn.boolean.careers/exercises/api/random/phone (ritorna un numero di telefono)
+-   https://flynn.boolean.careers/exercises/api/random/sentence (ritorna una frase)
+-   https://flynn.boolean.careers/exercises/api/random/boolean (ritorna o vero o falso)
+-   https://flynn.boolean.careers/exercises/api/array/integers?min=n&max=n&items=n (ritorna un array di items numeri, contenuti nel range min-max)
