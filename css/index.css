@@ -34,6 +34,11 @@ body {
     background-color: rgb(36, 243, 147);
     animation: boxEntrance 700ms ease-out;
     animation-fill-mode: backwards;
+    transition: transform 0.3s ease-in-out;
+}
+
+.box:hover {
+    transform: scale(1.5);
 }
 
 @keyframes boxEntrance {
