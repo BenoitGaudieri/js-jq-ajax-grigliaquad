@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    // Random int api grid
     var apiUrl = "https://flynn.boolean.careers/exercises/api/random/int";
     for (let i = 0; i < 36; i++) {
         $(".grid").append('<div class="box"></div>');
@@ -33,7 +34,29 @@ $(document).ready(function () {
                 // }
             },
             error: function (err) {
-                console.log("error", "si è verificato un errore che orrore ");
+                console.log("Error: ", err);
+            },
+        });
+    });
+
+    // Joke
+    let jokeUrl = "https://icanhazdadjoke.com/";
+
+    const jokeBtn = $(".make-joke");
+
+    jokeBtn.click(function () {
+        $.ajax({
+            url: jokeUrl,
+            method: "GET",
+            beforeSend: function (xhr) {
+                xhr.setRequestHeader("Accept", "application/json");
+            },
+            success: function (data) {
+                var joke = data.joke;
+                $(".joke").text(joke);
+            },
+            error: function (err) {
+                console.log("Error: ", err);
             },
         });
     });
