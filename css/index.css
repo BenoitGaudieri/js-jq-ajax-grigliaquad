@@ -144,3 +144,20 @@ body {
     max-width: 800px;
     line-height: 50px;
 }
+
+.css-tricks--div {
+    background-color: #fff;
+    padding: 10px;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+
+.css-tricks--div h2 {
+    text-align: center;
+    font-size: 28px;
+}
+
+.css-tricks {
+    margin: 2px;
+}

@@ -61,5 +61,45 @@ $(document).ready(function () {
         });
     });
 
+    // CSS TRICKS
+    const wpUrl = "https://css-tricks.com/wp-json/wp/v2/posts";
+
+    // Init handlebars
+    var source = $("#css-tricks-template").html();
+    var template = Handlebars.compile(source);
+    var moustache = {};
+
+    $.ajax({
+        url: wpUrl,
+        method: "GET",
+        success: function (data) {
+            for (let i = 0; i < data.length; i++) {
+                for (const key in data[i]) {
+                    // console.log(data[i][key]);
+                    if (key === "link") {
+                        var link = data[i][key];
+                        // console.log(link);
+                        // $(".css-tricks").append(data[i][key]);
+                        moustache.link = link;
+                        // console.log(moustache.link);
+                    }
+                    if (key === "title") {
+                        var title = data[i][key]["rendered"];
+                        // console.log(data[i][key]["rendered"]);
+                        // $(".css-tricks").append(data[i][key]["rendered"]);
+                        moustache.title = title;
+
+                        // handlebars output
+                        var html = template(moustache);
+                        $(".css-tricks--div").append(html);
+                    }
+                }
+            }
+        },
+        error: function (err) {
+            console.log("Error: ", err);
+        },
+    });
+
     //
 }); // end Doc ready
