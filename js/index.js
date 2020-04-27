@@ -1,7 +1,7 @@
 $(document).ready(function () {
     var apiUrl = "https://flynn.boolean.careers/exercises/api/random/int";
     for (let i = 0; i < 36; i++) {
-        $(".grid").append('<div class="box">0</div>');
+        $(".grid").append('<div class="box"></div>');
     }
     var boxes = $(".box");
 
