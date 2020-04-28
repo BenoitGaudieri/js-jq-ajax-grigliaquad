@@ -7,7 +7,9 @@
 body {
     font-family: "Roboto", sans-serif;
     background: linear-gradient(to right, #fdfbfb, #ebedee 70%);
+}
 
+.grid-side {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,7 +17,7 @@ body {
 }
 
 .grid {
-    margin: 30px;
+    /* margin: 30px; */
     display: grid;
     gap: 10px;
 
@@ -55,7 +57,7 @@ body {
 }
 
 .gradient {
-    margin: 30px;
+    margin: 15px;
     font-weight: 700;
     background: linear-gradient(to left, #ff5656 0%, #eeee4e 50%, #2fd837 100%);
     -webkit-background-clip: text;
@@ -141,16 +143,17 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: color-rotate 3s infinite alternate;
-    max-width: 800px;
+    /* max-width: 800px; */
     line-height: 50px;
+    text-align: center;
 }
 
 .css-tricks--div {
     background-color: #fff;
     padding: 10px;
-    position: absolute;
+    /* position: absolute;
     top: 20%;
-    right: 30px;
+    right: 30px; */
     color: #fff;
     border-radius: 16px;
     background: #17141d;
@@ -181,10 +184,29 @@ body {
 
 .css-tricks--div h2 {
     text-align: center;
-    font-size: 28px;
+    font-size: 40px;
     margin: 0 0 30px;
 }
 
 .css-tricks {
     margin: 0 0 5px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0;
+}
+
+.joke-side {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    align-items: center;
+}
+
+.footer {
+    animation: boxEntrance 700ms ease-out;
+    animation-fill-mode: backwards;
+    transition: transform 0.3s ease-in-out;
 }

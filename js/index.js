@@ -101,5 +101,34 @@ $(document).ready(function () {
         },
     });
 
+    // async function doAjax(){
+    //     let result;
+    //     try {
+    //         result = await $.ajax({
+    //             url: wpUrl,
+    //             method: "GET",
+    //             function (data) {
+    //                 for (let i = 0; i < data.length; i++) {
+    //                     for (const key in data[i]) {
+    //                         if (key === "link") {
+    //                             var link = data[i][key];
+    //                             moustache.link = link;
+    //                         }
+    //                         if (key === "title") {
+    //                             var title = data[i][key]["rendered"];
+    //                             moustache.title = title;
+
+    //                             // handlebars output
+    //                             var html = template(moustache);
+    //                             $(".css-tricks--div").append(html);
+    //                         }
+    //                     }
+    //                 }
+    //             },
+
+    //         });
+    //     }
+    // }
+
     //
 }); // end Doc ready
