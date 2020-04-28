@@ -149,15 +149,42 @@ body {
     background-color: #fff;
     padding: 10px;
     position: absolute;
-    top: 30%;
-    right: 10%;
+    top: 20%;
+    right: 30px;
+    color: #fff;
+    border-radius: 16px;
+    background: #17141d;
+    box-shadow: -1rem 0 3rem #000;
+}
+
+.css-tricks--div a {
+    color: #fff;
+    font-size: 20px;
+}
+
+.css-tricks--div a:hover,
+.css-tricks--div h2 {
+    background: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(#ff8a00),
+        to(#e52e71)
+    );
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    text-shadow: none;
 }
 
 .css-tricks--div h2 {
     text-align: center;
     font-size: 28px;
+    margin: 0 0 30px;
 }
 
 .css-tricks {
-    margin: 2px;
+    margin: 0 0 5px;
 }
