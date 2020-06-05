@@ -28,7 +28,7 @@ $(document).ready(function () {
                 }
 
                 // // Controllo valore casella
-                // if (self.text() === "0") {
+                // if (self.text() === "") {
                 //     // use the reference to the box
                 //     self.text(num);
                 // }
@@ -73,6 +73,8 @@ $(document).ready(function () {
         url: wpUrl,
         method: "GET",
         success: function (data) {
+            console.log(data.length);
+
             for (let i = 0; i < data.length; i++) {
                 for (const key in data[i]) {
                     // console.log(data[i][key]);
